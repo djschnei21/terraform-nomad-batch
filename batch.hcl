@@ -1,3 +1,11 @@
+variable "job_name" {
+  description = "Name of the job"
+}
+
+variable "node_pool" {
+  description = "Node pool to run the job"
+}
+
 job "batch-job" {
   datacenters = ["dc1"]
   name        = var.job_name
