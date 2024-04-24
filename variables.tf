@@ -22,11 +22,3 @@ variable "region" {
   type        = string
   description = "The AWS and HCP region to create resources in"
 }
-
-variable "stack_id" {
-  type = string
-}
-
-variable "my_email" {
-  type = string
-}
