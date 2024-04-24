@@ -6,6 +6,10 @@ variable "node_pool" {
   description = "Node pool to run the job"
 }
 
+variable "cron_schedule" {
+  description = "Cron schedule for the job"
+}
+
 job "batch-job" {
   datacenters = ["dc1"]
   name        = var.job_name

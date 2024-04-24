@@ -40,6 +40,7 @@ resource "nomad_job" "batch" {
     vars = {
       job_name = var.job_name
       node_pool = var.node_pool
+      cron_schedule = var.cron_schedule
     }
   }
   jobspec = file("${path.module}/batch.hcl")
